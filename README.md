@@ -60,7 +60,7 @@ julia> @match :[1, 2, 3, 4, 5, 6, 7] begin
          [1, a_, 3, b__, c_] -> (a, b, c)
          [a__] -> a
        end
-(2,{4,5,6},7)
+(2,Any[4,5,6],7)
 ```
 
 Slurps don't have to be at the end of an expression, but like the
